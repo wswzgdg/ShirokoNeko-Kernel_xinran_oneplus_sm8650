@@ -302,7 +302,7 @@ void ZSTD_ldm_fillHashTable(
     while (ip < iend) {
         size_t hashed;
         unsigned n;
-        
+
         numSplits = 0;
         hashed = ZSTD_ldm_gear_feed(&hashState, ip, (size_t)(iend - ip), splits, &numSplits);
 
